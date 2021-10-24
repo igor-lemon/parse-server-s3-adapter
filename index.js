@@ -148,7 +148,7 @@ class S3Adapter {
         if (data && !data.Body) {
           return reject(data);
         }
-        return resolve(data.Body);
+        return resolve(data);
       });
     }));
   }
